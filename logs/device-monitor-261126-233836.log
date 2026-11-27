@@ -1,0 +1,2 @@
+# HFI bring-up ready. Gates OFF.
+# Commands: ? | u <V> | f <Hz> | g (sweep) | p (PLL standstill) | t (PLL tracking) | a (align) | o <deg> | n (polarity) | m (accuracy map)

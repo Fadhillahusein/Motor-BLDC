@@ -1,0 +1,56 @@
+# ---- MODE 5 SPIN WITH HFI: rotor FREE, nothing attached, hands off (~20 s) ----
+# Need the encoder offset first: run a (it is the safety judge).
+# ---- MODE 4a ALIGN v2: rotor must be FREE, do not touch it (~25 s) ----
+# residual offsets a,b,c [A] = -0.0094,-0.0314,-0.0389
+START_LOG
+k,dir,applied_deg,enc_el_deg,diff_deg,i_peak_A
+0,fwd,0.0,-33.9,-33.9,2.24
+1,fwd,45.0,5.7,-39.3,2.29
+2,fwd,90.0,55.2,-34.8,2.35
+3,fwd,135.0,108.9,-26.1,2.24
+4,fwd,180.0,146.9,-33.1,2.22
+5,fwd,225.0,-172.5,-37.5,2.23
+6,fwd,270.0,-120.6,-30.6,2.35
+7,fwd,315.0,-68.1,-23.1,2.28
+8,back,315.0,-69.1,-24.1,2.25
+9,back,270.0,-120.3,-30.3,2.40
+10,back,225.0,-172.5,-37.5,2.29
+11,back,180.0,149.1,-30.9,2.25
+12,back,135.0,108.2,-26.8,2.27
+13,back,90.0,55.9,-34.1,2.42
+14,back,45.0,5.7,-39.3,2.29
+15,back,0.0,-31.2,-31.2,2.27
+STOP_LOG
+# offset forward  [deg] = -32.3
+# offset backward [deg] = -31.8
+# forward - backward [deg] = -0.6
+# encoder offset (average, USED) [deg] = -32.0
+# Do NOT type o afterwards: this offset is already set. Next: m
+# ---- MODE 5 SPIN WITH HFI: rotor FREE, nothing attached, hands off (~20 s) ----
+# Uh [V] = 0.300
+# fh [Hz] = 1000
+# loop rate [Hz] = 62990
+# samples per HF period = 25.0
+# predicted HF current amplitude [A] = 0.778
+# PWM centre duty [%] = 50.0
+# software clamp U_SAFE [V] = 1.00
+# PLL Ke [A/rad] = 0.1020
+# PLL Kp = 332.6
+# PLL Ki = 3483.4
+# residual offsets a,b,c [A] = -0.0076,-0.0061,-0.0257
+# quick polarity: rounds = 20, tau(+d)-tau(-d) [us] = -2.7, z = -0.4
+# ABORT: polarity not clear, no torque applied.
+# ---- MODE 5 SPIN WITH HFI: rotor FREE, nothing attached, hands off (~20 s) ----
+# Uh [V] = 0.300
+# fh [Hz] = 1000
+# loop rate [Hz] = 62975
+# samples per HF period = 25.0
+# predicted HF current amplitude [A] = 0.778
+# PWM centre duty [%] = 50.0
+# software clamp U_SAFE [V] = 1.00
+# PLL Ke [A/rad] = 0.1020
+# PLL Kp = 332.6
+# PLL Ki = 3483.4
+# residual offsets a,b,c [A] = -0.0136,-0.0095,-0.0056
+# quick polarity: rounds = 20, tau(+d)-tau(-d) [us] = -3.9, z = -0.9
+# ABORT: polarity not clear, no torque applied.

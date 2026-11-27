@@ -1,0 +1,54 @@
+# ---- MODE 4a ALIGN v2: rotor must be FREE, do not touch it (~25 s) ----
+# residual offsets a,b,c [A] = -0.0313,-0.0307,-0.0566
+START_LOG
+k,dir,applied_deg,enc_el_deg,diff_deg,i_peak_A
+0,fwd,0.0,-25.8,-25.8,2.25
+1,fwd,45.0,12.5,-32.5,2.27
+2,fwd,90.0,61.7,-28.3,2.36
+3,fwd,135.0,113.4,-21.6,2.25
+4,fwd,180.0,149.2,-30.8,2.27
+5,fwd,225.0,-172.2,-37.2,2.26
+6,fwd,270.0,-123.1,-33.1,2.31
+7,fwd,315.0,-70.7,-25.7,2.30
+8,back,315.0,-70.7,-25.7,2.27
+9,back,270.0,-122.9,-32.9,2.42
+10,back,225.0,-172.5,-37.5,2.29
+11,back,180.0,151.6,-28.4,2.24
+12,back,135.0,112.4,-22.6,2.25
+13,back,90.0,62.1,-27.9,2.43
+14,back,45.0,11.9,-33.1,2.30
+15,back,0.0,-23.9,-23.9,2.31
+STOP_LOG
+# offset forward  [deg] = -29.4
+# offset backward [deg] = -29.0
+# forward - backward [deg] = -0.4
+# encoder offset (average, USED) [deg] = -29.2
+# Do NOT type o afterwards: this offset is already set. Next: m
+# ---- ACCURACY MAP: rotor FREE, do not touch it (~40 s) ----
+# Uh [V] = 0.300
+# fh [Hz] = 1000
+# loop rate [Hz] = 63145
+# samples per HF period = 25.0
+# predicted HF current amplitude [A] = 0.778
+# PWM centre duty [%] = 50.0
+# software clamp U_SAFE [V] = 1.00
+# PLL Ke [A/rad] = 0.1020
+# PLL Kp = 332.6
+# PLL Ki = 3483.4
+# residual offsets a,b,c [A] = -0.0239,-0.0207,-0.0280
+START_LOG
+k,target_deg,true_d_deg,th_lock_deg,err_deg,moved_deg
+0,0.0,7.2,3.0,-4.2,0.8
+1,45.0,44.9,44.4,-0.6,0.0
+2,90.0,80.7,84.6,3.9,-1.0
+3,135.0,129.0,132.0,2.9,-1.0
+4,180.0,177.4,179.1,1.7,-0.9
+5,225.0,-141.0,223.1,4.1,-0.9
+6,270.0,-101.4,267.0,8.5,-1.0
+7,315.0,-54.1,310.8,4.9,-1.0
+STOP_LOG
+# mean error [deg el] = 2.6
+# spread (std) [deg el] = 3.5
+# worst |error| [deg el] = 8.5
+# GOOD if worst |error| < ~10 deg. Check that true_d values spread around the circle.
+# If moved_deg is large (> ~10), the rotor drifted during HFI: note which k.

@@ -1,0 +1,44 @@
+# ---- MODE 4a ALIGN v2: rotor must be FREE, do not touch it (~25 s) ----
+# residual offsets a,b,c [A] = -0.0289,-0.0442,-0.0606
+START_LOG
+k,dir,applied_deg,enc_el_deg,diff_deg,i_peak_A
+0,fwd,0.0,-18.2,-18.2,2.26
+1,fwd,45.0,21.4,-23.6,2.28
+2,fwd,90.0,71.7,-18.3,2.34
+3,fwd,135.0,126.0,-9.0,2.25
+4,fwd,180.0,164.4,-15.6,2.26
+5,fwd,225.0,-155.8,-20.8,2.27
+6,fwd,270.0,-105.6,-15.6,2.36
+7,fwd,315.0,-52.4,-7.4,2.31
+8,back,315.0,-52.4,-7.4,2.28
+9,back,270.0,-105.5,-15.5,2.42
+10,back,225.0,-155.8,-20.8,2.30
+11,back,180.0,166.5,-13.5,2.23
+12,back,135.0,125.4,-9.6,2.25
+13,back,90.0,71.8,-18.2,2.42
+14,back,45.0,21.4,-23.6,2.28
+15,back,0.0,-16.6,-16.6,2.29
+STOP_LOG
+# offset forward  [deg] = -16.1
+# offset backward [deg] = -15.7
+# forward - backward [deg] = -0.4
+# encoder offset (average, USED) [deg] = -15.9
+# Do NOT type o afterwards: this offset is already set. Next: m
+# ---- MODE 5 SPIN WITH HFI: rotor FREE, nothing attached, hands off (~20 s) ----
+# Uh [V] = 0.300
+# fh [Hz] = 1000
+# loop rate [Hz] = 63005
+# samples per HF period = 25.0
+# predicted HF current amplitude [A] = 0.778
+# PWM centre duty [%] = 50.0
+# software clamp U_SAFE [V] = 1.00
+# PLL Ke [A/rad] = 0.1020
+# PLL Kp = 332.6
+# PLL Ki = 3483.4
+# residual offsets a,b,c [A] = -0.0121,-0.0372,-0.0564
+# polarity: rounds = 60, d diff [us] = -6.1 (z = -1.9), q control [us] = 1.6
+# not clear yet -> adding 60 more rounds
+# polarity: rounds = 120, d diff [us] = -5.8 (z = -2.3), q control [us] = 1.4
+# not clear yet -> adding 60 more rounds
+# polarity: rounds = 180, d diff [us] = -6.3 (z = -3.0), q control [us] = 0.7
+# ABORT: polarity not clear, no torque applied.
